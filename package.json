@@ -1,0 +1,33 @@
+{
+  "name": "mygovbc-bootstrap-theme",
+  "version": "0.0.1",
+  "description": "A BC Gov Look-and-Feel for MyGovBC Service Providers using a bootstrap 3.x theme",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack -p --display-error-details"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcgov/mygovbc-bootstrap-theme.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bcgov/mygovbc-bootstrap-theme/issues"
+  },
+  "homepage": "https://github.com/bcgov/mygovbc-bootstrap-theme#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "clean-webpack-plugin": "^0.1.16",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.0.0",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "font-awesome": "^4.7.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.4",
+    "style-loader": "^0.18.1",
+    "webpack": "^2.6.1"
+  }
+}
