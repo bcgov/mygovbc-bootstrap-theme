@@ -38,7 +38,7 @@ a {
     margin-left: 10px;
 }
 
-.msp-app .btn-default {
+.btn-default {
     margin-right: 15px;
     
     @media screen and (max-width:@screen-sm) {
@@ -349,4 +349,17 @@ input[type="radio"] {
       color: #fff;
     }
   }
+}
+
+/*
+  Hide spinners in firefox
+ */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
 }

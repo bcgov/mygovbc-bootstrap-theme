@@ -66,25 +66,6 @@
   text-decoration: none!important;
 }
 
-.msp-btn-radio {
-  background: #2962FF;
-  color: white;
-  &:hover {
-    background: #2962FF;
-    color: white;
-  }
-  &:not(:hover) {
-    background: #2962FF;
-    color: white;
-  }
-  &:selection {
-    background: #2962FF;
-  }
-  &:active {
-    background: #2962FF;
-  }
-}
-
 /* Apply our bootstrap theme form-control to the input of the component using some
    some less magic */
 .completer-holder input {
@@ -141,16 +122,4 @@ Special accessibility class to hide things like labels but still have the readab
   clip: rect(0 0 0 0);
   height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
-}
-/*
-  Hide spinners in firefox
- */
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance:textfield;
 }
