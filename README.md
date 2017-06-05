@@ -3,6 +3,10 @@ A B.C. Gov. Look-and-Feel for MyGovBC Service Providers using a bootstrap 3.x th
 
 # Demo
 
+Demostration of all bootstrap styles implemented using this theme:
+
+https://bcgov.github.io/mygovbc-bootstrap-theme/
+
 # Installation
 
 Pick you favourite package manager method:
