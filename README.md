@@ -35,5 +35,5 @@ There are some minor additions to help with the B.C. look-and-feel
  
 1. Myrid WebPro font included and defaulted to
 2. `visuallyhidden` class can be used to accessiblity purposes
-3. Sticky headers and footers if you use a `#wrap` `div`
+3. Sticky headers and footers if you use a `#wrap` and `#pad` divs, see the demo page
 
