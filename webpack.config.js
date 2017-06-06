@@ -42,7 +42,9 @@ module.exports = {
     extractLess,
     new CopyWebpackPlugin([
       // {output}/file.txt
-      { from: 'node_modules/bootstrap/dist/js', to: 'js' }])
+      { from: 'node_modules/bootstrap/dist/js', to: 'js' },
+      // {output}/file.txt
+      { from: 'src/images', to: 'images' }])
   ]
 
 };
