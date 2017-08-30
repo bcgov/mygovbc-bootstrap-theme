@@ -1,7 +1,7 @@
 # 🚀 mygovbc-bootstrap-theme
 A B.C. Gov. Look-and-Feel for MyGovBC Service Providers using a bootstrap 3.x theme.
 
-[Demostration of all bootstrap styles implemented and enhancements using this theme](https://bcgov.github.io/mygovbc-bootstrap-theme/)
+[Demostration of all bootstrap styles implemented and enhancements using this theme](https://bcgov.github.io/mygovbc-bootstrap-theme/docs/index.html)
 
 # Installation
 
