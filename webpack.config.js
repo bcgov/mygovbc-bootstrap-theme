@@ -17,21 +17,25 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.less$/,
-      use: extractLess.extract({
-        use: [{
-          loader: "css-loader"
-        }, {
-          loader: "less-loader"
-        }],
-        // use style-loader in development
-        fallback: "style-loader"
-      })
-    },
+        test: /\.less$/,
+        use: extractLess.extract({
+          use: [{
+            loader: "css-loader",
+            options: {
+              minimize: true
+            }
+          }, {
+            loader: "less-loader"
+          }],
+          // use style-loader in development
+          fallback: "style-loader"
+        })
+      },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         loader: 'file-loader?name=fonts/[name].[ext]'
-      }]
+      }
+    ]
   },
   plugins: [
     new CleanWebpackPlugin(['dist'], {
@@ -40,11 +44,18 @@ module.exports = {
       dry: false
     }),
     extractLess,
-    new CopyWebpackPlugin([
-      // {output}/file.txt
-      { from: 'node_modules/bootstrap/dist/js', to: 'js' },
-      // {output}/file.txt
-      { from: 'src/images', to: 'images' }])
+    new CopyWebpackPlugin([{
+        from: 'node_modules/bootstrap/dist/js',
+        to: 'js'
+      },
+      {
+        from: 'docs',
+        to: ''
+      },
+      {
+        from: 'src/images',
+        to: 'images'
+      }
+    ])
   ]
-
 };
